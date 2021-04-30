@@ -1,4 +1,9 @@
-# Workshop with Google!
+# Workshop with Google! Team Fuschia
+
+
+
+## Details about Workshop 3 below
+
 Last year, COVID-19 locked us home and upended our lives.
 
 They were hard times for many, and we want to explore the relationship between **our struggles** and **our solidarity** during the pandemic using [Google Trends](https://trends.google.com/).
