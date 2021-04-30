@@ -1,5 +1,6 @@
 # Workshop with Google! Team Fuschia
 
+![Fuschia](https://about.canva.com/wp-content/uploads/sites/8/2019/03/fuschia.png)
 
 
 ## Details about Workshop 3 below
