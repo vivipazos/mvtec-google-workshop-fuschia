@@ -1,6 +1,6 @@
 # Workshop with Google! Team Fuschia
 
-![Fuschia](https://github.com/vivipazos/mvtec-google-workshop-fuschia/blob/main/rebecca-working/fuschia.png | width=100)
+<img src="https://github.com/vivipazos/mvtec-google-workshop-fuschia/blob/main/rebecca-working/fuschia.png" width="100">
 
 
 ## Details about Workshop 3 below
