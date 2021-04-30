@@ -1,6 +1,6 @@
 # Workshop with Google! Team Fuschia
 
-![Fuschia](https://about.canva.com/wp-content/uploads/sites/8/2019/03/fuschia.png)
+![Fuschia](https://github.com/vivipazos/mvtec-google-workshop-fuschia/blob/main/rebecca-working/fuschia.png)
 
 
 ## Details about Workshop 3 below
