@@ -162,10 +162,6 @@ $: {
 
 <style>
 
-    svg {
-        border: 1px solid black;
-    }
-
     text {
         text-anchor: middle;
     }
