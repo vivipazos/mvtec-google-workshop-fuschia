@@ -34,44 +34,69 @@
 			</section>
 
 			<section>
-				<h>DECEMBER  2019</h>
-				We start our story in December 2019. Just before the pandemic hits. 
+				<b>DECEMBER  2019</b>
+				<br>
+				We start our story in December 2019. Just <br>
+				before the pandemic hits. <br> <br>
 				Three of us cared about fires burning in Australia.
 			</section>
 		
 			<section>
-				<h>JANUARY 2020</h>
-				Interest in helping for the Australian bushfires peaked in January, while interest in Coronavirus was just beginning. 
+				<b>JANUARY 2020</b>
+				<br>
+				Interest in helping for the Australian bushfires <br>
+				peaked in January, while interest in <br>
+				Coronavirus was just beginning. 
 			</section>
 
 			<section>
-				<h>FEBRUARY 2020</h>
-				In less than a month, everyone’s attention was elsewhere. Just one person was left caring about the bushfires while Coronavirus interest rose to five people. 
+				<b>FEBRUARY 2020</b>
+				<br>
+				In less than a month, everyone’s attention was <br>
+				elsewhere. Just one person was left caring <br>
+				 about the bushfires while Coronavirus interest <br>
+				 rose to five people. 
 			</section>
 
 			<section>
-				<h>MARCH 2020</h>
-				At the peak of the first wave, almost everyone was trying to search ways to help with Coronavirus. 
+				<b>MARCH 2020</b>
+				<br>
+				At the peak of the first wave, almost everyone <br>
+				 was trying to search ways to help with <br>
+				  Coronavirus. 
 			</section>
 
 			<section>
-				<h>APRIL 2020</h>
-				Slowly, people drifted away. A month later, the number of people searching how to help with Coronavirus dropped by a third.
+				<b>APRIL 2020</b>
+				<br>
+				Slowly, people drifted away. A month later, the <br>
+				number of people searching how to help with <br>
+				 Coronavirus dropped by a third.
 			</section>
 
 			<section>
-				<h>MAY 2020</h>
-				Just two months after its peak, interest in Coronavirus dropped to just 16 people. Black Lives Matter protests were on the rise.
+				<b>MAY 2020</b>
+				<br>
+				Just two months after its peak, interest in <br>
+				Coronavirus dropped to just 16 people. Black <br>
+				 Lives Matter protests were on the rise.
 			</section>
 
 			<section>
-				<h>JUNE 2020</h>
-				The death of George Floyd sparks wide interest in the Black Lives Matter protest. Yemen’s crisis from Coronavirus also gets some interest.
+				<b>JUNE 2020</b>
+				<br>
+				The death of George Floyd sparks wide interest <br>
+				 in the Black Lives Matter protest. Yemen’s crisis <br>
+				  from Coronavirus also gets some interest.
 			</section>
 
 			<section>
-				<h>JULY 2020</h>
-				Less than a fifth of people are still searching how to help, falling dramatically in just a month. And, looking back at all the data since 2015, this is a common trend for crisis events.
+				<b>JULY 2020</b>
+				<br>
+				Less than a fifth of people are still searching <br>
+				 how to help, falling dramatically in just a <br>
+				 month. And, looking back at all the data since <br>
+				 2015, this is a common trend for crisis events.
 			</section>
 		</div>
 	  </Scroller>
