@@ -53,7 +53,6 @@ keys.forEach(key=> {
 const simulation = forceSimulation(data)
                     .force("x",forceX(d => d.x0))
                     .force("y",forceY(d => d.y0))
-                    .tick(iterations)
                 ;
 
 </script>
