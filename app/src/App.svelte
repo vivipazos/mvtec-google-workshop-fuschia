@@ -3,6 +3,13 @@
 	import Test from './test/Test.svelte'
 	import Footer from './components/common/Footer.svelte'
 	import Clusters from './Clusters.svelte'
+	import Scroller from '@sveltejs/svelte-scroller';
+	import dataScr from './data/Scrolly.json'
+
+  let index = 0,
+ offset, progress;
+
+  $: console.log(index);
 	// import Random from './components/common/Random.svelte'
 
 </script>
@@ -19,7 +26,18 @@
 			<h3>Let's reimagine the Google search index as 100 people, represented by these floating circles <span class="dot"></span>.</h3>
 		</div>
 	</div> -->
-	<Clusters/>
+	<Scroller top={0} bottom={1} bind:index bind:offset bind:progress>
+		<div slot="background">
+			<Clusters
+			selectedObject={dataScr[index]}/>
+		</div>
+	  
+		<div slot="foreground">
+		  <section>This is the first section.</section>
+		  <section>This is the second section.</section>
+		  <section>This is the third section.</section>
+		</div>
+	  </Scroller>
 	<!-- <Test /> -->
 
 	<!-- <Random /> -->
@@ -74,4 +92,7 @@
   		border-radius: 50%;
   		display: inline-block;
 	}	
+	section {
+		height: 80vh;
+	}
 </style>
