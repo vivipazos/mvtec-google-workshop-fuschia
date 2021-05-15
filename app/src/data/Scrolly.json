@@ -1,0 +1,58 @@
+[
+  {
+    "month": "Dec 2019",
+    "Australia fires": 3,
+    "Coronavirus": 0,
+    "Yemen": 0,
+    "Black Lives Matter": 0,
+    "Other": 97
+  },
+  {
+    "month": "Jan 2020",
+    "Australia fires": 24,
+    "Coronavirus": 2,
+    "Yemen": 0,
+    "Black Lives Matter": 0,
+    "Other": 74
+  },
+  {
+    "month": "Feb 2020",
+    "Australia fires": 1,
+    "Coronavirus": 5,
+    "Yemen": 0,
+    "Black Lives Matter": 0,
+    "Other": 94
+  },
+  {
+    "month": "Mar 2020",
+    "Australia fires": 0,
+    "Coronavirus": 94,
+    "Yemen": 0,
+    "Black Lives Matter": 0,
+    "Other": 5
+  },
+  {
+    "month": "Apr 2020",
+    "Australia fires": 0,
+    "Coronavirus": 63,
+    "Yemen": 0,
+    "Black Lives Matter": 0,
+    "Other": 36
+  },
+  {
+    "month": "May 2020",
+    "Australia fires": 0,
+    "Coronavirus": 16,
+    "Yemen": 0,
+    "Black Lives Matter": 6,
+    "Other": 77
+  },
+  {
+    "month": "Jun 2020",
+    "Australia fires": 0,
+    "Coronavirus": 14,
+    "Yemen": 12,
+    "Black Lives Matter": 41,
+    "Other": 32
+  }
+]

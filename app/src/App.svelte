@@ -2,12 +2,13 @@
 	import Menu from './components/common/Menu.svelte'
 	import Test from './test/Test.svelte'
 	import Footer from './components/common/Footer.svelte'
+	import Clusters from './Clusters.svelte'
 	// import Random from './components/common/Random.svelte'
 
 </script>
 
 <main>
-	<meta charset="UTF-8">
+<!-- 	<meta charset="UTF-8">
 	<div class="header">
 		<video autoplay muted loop id="myVideo">
 			<source src="./assets/randomCircles_6.mp4" type="video/mp4">
@@ -17,7 +18,8 @@
 			<h3>But, according to Google search, not for <strong>long enough</strong>.</h3>
 			<h3>Let's reimagine the Google search index as 100 people, represented by these floating circles <span class="dot"></span>.</h3>
 		</div>
-	</div>
+	</div> -->
+	<Clusters/>
 	<!-- <Test /> -->
 
 	<!-- <Random /> -->
