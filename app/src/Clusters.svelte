@@ -3,28 +3,34 @@ import {forceSimulation, forceX, forceY, forceCollide} from 'd3-force'
 
 export let selectedObject;
 
-// $: console.log('data', selectedObject);
-
 const clusters = {
     "Australia fires": {
 		x0: 200,
-		y0: 400,
-        color: '#333333'
+		y0: 350,
+        color: '#333333',
+        textColor: 'white',
+        textBg: '#43DDDD',
 	},
     "Yemen": {
-		x0: 400,
-		y0: 400,
-        color: '#333333'
+		x0: 350,
+		y0: 350,
+        color: '#333333',
+        textColor: 'white',
+        textBg: '#8915EB',
 	},
 	"Black Lives Matter": {
 		x0: 500,
-		y0: 400,
-        color: '#333333'
+		y0: 350,
+        color: '#333333',
+        textColor: 'black',
+        textBg: '#FFD336',
 	},
 	"Coronavirus": {
 		x0: 700,
-		y0: 400,
-        color: '#333333'
+		y0: 350,
+        color: '#333333',
+        textColor: 'white',
+        textBg: '#8915EB'
 	},
     "Other": {
 		x0: null,
@@ -40,7 +46,7 @@ let data = new Array(100).fill()
 	.map(a => ({
 		x: Math.random()*width,
 		y: Math.random()*height,
-        r: 10
+        r: 8
 	}));
 
 const randomSimulation = forceSimulation(data)
@@ -110,7 +116,7 @@ $: {
             .velocityDecay(0.3)
             .force("x",forceX(d => d.x0 === null ? d.x : d.x0).strength(0.01))
             .force("y",forceY(d => d.y0 === null ? d.y : d.y0).strength(0.01))
-            .force("collide", forceCollide(d => d.r + 2))
+            .force("collide", forceCollide(d => d.r + 1 + Math.random() * 3))
             .on("tick", () => data = data)
 
         annotations = clusterNames
@@ -121,7 +127,10 @@ $: {
                     name: key,
                     x: c.x0,
                     y: c.y0,
-                    r: Math.sqrt(selectedObject[key] * 10) * 5
+                    textBg: c.textBg,
+                    textColor: c.textColor,
+                    r: Math.sqrt(selectedObject[key] * 10) * 5,
+                    textWidth: key.length * 6,
                 }
             });
 
@@ -148,15 +157,21 @@ $: {
 
 <main>
     <svg viewBox="0 0 {width} {height}">
-        {#each data as d}
-        <circle cx={d.x} cy={d.y} r={d.r} fill={d.color}/>
-        {/each}
-        {#each annotations as d}
-        <circle cx={d.x} cy={d.y} r={d.r} fill="none" stroke="#333" data-name={d.name}/>
-        <text x={d.x} y={d.y - d.r - 4}>
-            {d.name}
-        </text>
-        {/each}
+        <g>
+            {#each data as d}
+            <circle cx={d.x} cy={d.y} r={d.r} fill={d.color}/>
+            {/each}
+        </g>
+
+        <g>
+            {#each annotations as d}
+            <circle cx={d.x} cy={d.y} r={d.r} fill="none" stroke="#666" data-name={d.name}/>
+            <rect x={d.x - d.textWidth/2} y={d.y + d.r - 2} width={d.textWidth} height={16} fill={d.textBg} rx={5}/>
+            <text x={d.x} y={d.y + d.r + 10} fill={d.textColor}>
+                {d.name}
+            </text>
+            {/each}
+        </g>
     </svg>
 </main>
 
@@ -164,6 +179,7 @@ $: {
 
     text {
         text-anchor: middle;
+        font-size: 10px;
     }
 
 </style>
