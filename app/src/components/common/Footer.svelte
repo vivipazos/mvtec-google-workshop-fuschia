@@ -5,6 +5,7 @@
     import UdG from '../../img/UdG.svelte'
     import Tweet from './Tweet.svelte'
 </script>
+
 <div class='fs footer'>
     <div class='col'>
     <Container>
@@ -27,7 +28,7 @@
                 <h4>Made by</h4>
                 <p><slot name='team'></slot></p>
                 <p><b>Google News Lab:</b> <a href='https://simonrogers.net/'>Simon Rogers</a> and <a href='http://albertocairo.com/'>Alberto Cairo</a></p>
-                <p><b>MVTEC mentors: </b> Mentor, mentor, and mentor</p>
+                <p><b>MVTEC mentors: </b> <a href="https://www.karmapeiro.com/en/landing-en/">Karma Peiró</a> and Matt Osborn.</p>
             </Col>
         </Row>
         <p>This project was designed and developed in the <a href='http://www.mastervisualtoolsudg.com/'>Master’s program in Visual Tools to Empower Citizens (MVTEC)</a> organized by <a href='https://www.fundacioudg.org/'>Fundació UdG</a> and the <a href='https://www.fundaciovit.org/'>ViT Foundation</a></p>
