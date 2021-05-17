@@ -1,5 +1,13 @@
 [
   {
+    "month": "Blank date",
+    "Australia fires": 0,
+    "Coronavirus": 0,
+    "Yemen": 0,
+    "Black Lives Matter": 0,
+    "Other": 100
+  },
+  {
     "month": "Dec 2019",
     "Australia fires": 3,
     "Coronavirus": 0,

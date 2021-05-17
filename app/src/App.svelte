@@ -13,7 +13,7 @@
 <main>
 	<meta charset="UTF-8">
 	<div class="header">
-		<video autoplay muted loop id="myVideo">
+		<video autoplay muted id="myVideo">
 			<source src="./assets/intro.mp4" type="video/mp4">
 		</video>
 	</div>
