@@ -11,17 +11,12 @@
 </script>
 
 <main>
-<!-- 	<meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<div class="header">
 		<video autoplay muted loop id="myVideo">
-			<source src="./assets/randomCircles_6.mp4" type="video/mp4">
+			<source src="./assets/intro.mp4" type="video/mp4">
 		</video>
-		<div class = "header-text">
-			<h1>We all want to &#10024;&nbsp<strong>help</strong>&nbsp&#10024;.</h1>
-			<h3>But, according to Google search, not for <strong>long enough</strong>.</h3>
-			<h3>Let's reimagine the Google search index as 100 people, represented by these floating circles <span class="dot"></span>.</h3>
-		</div>
-	</div> -->
+	</div>
 	<Scroller top={0} bottom={1} bind:index={index}>
 		<div slot="background">
 			<Clusters selectedObject={dataScr[index]}/>
