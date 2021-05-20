@@ -212,6 +212,10 @@
 		margin: 0 auto;
 	}
 
+	Scroller {
+		width: 100%;
+	}
+
 	#myVideo {
   		right: 0;
   		bottom: 0;
