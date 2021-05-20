@@ -11,7 +11,10 @@
 	import Scroller from '@sveltejs/svelte-scroller';
 	import dataScr from './data/Scrolly.json'
 	import { Container, Row, Col, MaterialApp } from 'svelte-materialify';
+	import InlineSVG from 'svelte-inline-svg';
 
+	const chartDesktop = './assets/desktop-svg-chart.svg';
+	const chartMobile = './assets/mobile-svg-chart.svg'
 
 	let index = 0, offset, progress;
 
@@ -111,13 +114,16 @@
 		</Row>
 
 		<Row>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
-			<Col cols={10} sm={10} md={8} lg={6}>
-			<div class="text-body-1">
-				<p>INSERT SVG CHART HERE</p>
-			</div>
+			<Col cols={1} sm={1} md={2} lg={2}></Col>
+			<Col cols={10} sm={10} md={8} lg={8}>
+				<div class="desktop">
+					<InlineSVG src={chartDesktop}/>
+				</div>
+				<div class="mobile">
+					<InlineSVG src={chartMobile}/>
+				</div>
 			</Col>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={1} sm={1} md={2} lg={2}></Col>
 			</Row>
 
 		<Row>
@@ -211,10 +217,6 @@
 		margin: 0 auto;
 	}
 
-	Scroller {
-		width: 100%;
-	}
-
 	#myVideo {
   		right: 0;
   		bottom: 0;
@@ -248,8 +250,26 @@
 		color: #9F9F9F;
 	}
 
-	.env {
-		background-color: #71E7E0;
+	.desktop  {
+		display: none;
+		min-width: 480px;
 	}
+
+	.mobile {
+		display: block;
+		width: 100%;
+		/* max-width: 480px; */
+	}
+
+	@media only screen and (min-width:600px){
+		.mobile {
+			display: none;
+		}
+		.desktop {
+			display:block;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
 	
 </style>

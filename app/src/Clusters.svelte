@@ -167,7 +167,7 @@ $: {
             {#each annotations as d}
             <circle cx={d.x} cy={d.y} r={d.r} fill="none" stroke="#000" data-name={d.name}/>
             <rect x={d.x - d.textWidth/2} y={d.y + d.r - 2} width={d.textWidth} height={20} fill={d.textBg} rx={3} padding={20}/>
-            <text x={d.x} y={d.y + d.r + 10} fill={d.textColor} >
+            <text x={d.x} y={d.y + d.r + 10} fill={d.textColor} padding={20}>
                 {d.name}
             </text>
             {/each}
