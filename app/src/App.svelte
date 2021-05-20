@@ -41,13 +41,15 @@
 		<div slot="foreground">
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
-				<p>First, let's re-imagine the <strong>Google</strong> search index as 100 people, represented by these floating circles.</p>
+				<p>Pandemics, wildfires, protests. What drove us to band together to help?
+				<p>We found  some anwers in Google's search index but first, let's reimagine the  data as 100 people, represented by these floating circles <img src="./assets/grey-legend.png" class="legend"/>.</p>
+				
 				</div>
 			</section>
 
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
-				<p>As they group together to offer help' to those in need<span class="weepeople">m</span> as <span class="dot"></span>.</p>
+				<p>As they group together to offer help to those in need, the circles will change from grey to black <img src="./assets/black-legend.png" class="legend"/>.</p>
 				</div>
 			</section>
 
@@ -55,7 +57,7 @@
 				<div class="text elevation-1 pa-8 text-left">
 				<p class="text-subtitle-1 text-center">DECEMBER 2019</p>
 				<p>We start our story just before the pandemic hits.</p>
-				<p><b>Three</b> of us banded together to help Australia during its worst bushfires in recent history - an <span class="cyan white-text font-weight-black rounded pa-1 mb-2 elevation-1">environmental</span> catastrophe.</p>
+				<p><strong>Three</strong> of us banded together to help Australia during its worst bushfires in recent history - an <span class="cyan white-text font-weight-black rounded pa-1 mb-2 elevation-1">environmental</span> catastrophe.</p>
 				</div>
 			</section>
 		
@@ -69,7 +71,7 @@
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
 				<p class="text-subtitle-1 text-center">FEBRUARY 2020</p>
-				<p>In less than a month, everyone’s attention was elsewhere. Just <b>one person</b> was left caring about the <span class="cyan white-text font-weight-black rounded pa-1 mb-2 elevation-1">bushfires</span> while <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> interest rose to <b>five people</b>.</p>
+				<p>In less than a month, everyone’s attention was elsewhere. Just <strong>one person</strong> was left caring about the <span class="cyan white-text font-weight-black rounded pa-1 mb-2 elevation-1">bushfires</span> while <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> interest rose to <strong>five people</strong>.</p>
 				</div> 
 			</section>
 
@@ -90,7 +92,7 @@
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
 				<p class="text-subtitle-1 text-center">MAY 2020</p>
-				<p>Just two months after its peak, interest in <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> dropped to just <b>16 people</b>.</p>
+				<p>Just two months after its peak, interest in <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> dropped to just <strong>16 people</strong>.</p>
 				<p>Attention shifted as a result of George Floyd's horrific death, uniting people to help the <span class="yellow font-weight-black rounded pa-1 mb-2 elevation-1">Black Lives Matter protest</span> movement.</p>
 				</div>
 			</section>
@@ -262,7 +264,7 @@
 		<Row>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
 			<Col cols={10} sm={10} md={8} lg={6}>
-			<h2 class="text-h2"> Humans band together in times of crisis when we <b>need it most</b>.</h2>
+			<h1> Humans band together in times of crisis when we <strong>need it most</strong>.</h1>
 			<div class="text-body-1">
 				<p>Some final comments here.</p>
 			</div>
@@ -342,5 +344,8 @@
 		padding-bottom: 40px;
 	}
 
+	.legend {
+		width: 60px;
+	}
 	
 </style>
