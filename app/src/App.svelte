@@ -5,24 +5,28 @@
 <script>
 
 	import Menu from './components/common/Menu.svelte'
-	import Test from './test/Test.svelte'
 	import Footer from './components/common/Footer.svelte'
 	import Clusters from './Clusters.svelte'
 	import Scroller from '@sveltejs/svelte-scroller';
 	import dataScr from './data/Scrolly.json'
-	import { Container, Row, Col, MaterialApp } from 'svelte-materialify';
+	import { Container, Row, Col, MaterialApp, ItemGroup } from 'svelte-materialify';
 	import InlineSVG from 'svelte-inline-svg';
 
 	const chartDesktop = './assets/desktop-svg-chart.svg';
 	const chartMobile = './assets/mobile-svg-chart.svg';
 	const puertoRicoMonth1 = './assets/puertoRico-month1.svg';
 	const puertoRicoMonth2 = './assets/puertoRico-month2.svg';
+	const environment = './assets/environment.svg';
+	const conflicts = './assets/conflicts.svg';
+	const protests = './assets/protests.svg';
+	const coronavirus = './assets/coronavirus.svg';
 
 	let index = 0, offset, progress;
 
 </script>
 
 <main>
+<MaterialApp>
 	<meta charset="UTF-8">
 	<div class="header">
 		<video autoplay muted id="myVideo">
@@ -37,7 +41,13 @@
 		<div slot="foreground">
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
-				<p>First, let's re-imagine the Google search index as 100 people, represented by these floating circles, <span class="weepeople">m</span> as <span class="dot"></span>.</p>
+				<p>First, let's re-imagine the <strong>Google</strong> search index as 100 people, represented by these floating circles.</p>
+				</div>
+			</section>
+
+			<section>
+				<div class="text elevation-1 pa-8 text-left">
+				<p>As they group together to offer help' to those in need<span class="weepeople">m</span> as <span class="dot"></span>.</p>
 				</div>
 			</section>
 
@@ -96,28 +106,30 @@
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
 				<p class="text-subtitle-1 text-center">JULY 2020</p>
-				<p>Less than a fifth of people are still searching how to help with the <span class="yellow font-weight-black rounded pa-1 mb-2 elevation-1">Black Lives Matter</span> protests, falling dramatically in just a month. And, looking back at all the data since 2015, these attention shifts is very common for <b>major crisis events</b>...</p>
+				<p>Less than a fifth of people are still searching how to help with the <span class="yellow font-weight-black rounded pa-1 mb-2 elevation-1">Black Lives Matter</span> protests, falling dramatically in just a month.</p>
+					
+				<p>And, looking back at all the data since 2015, these attention shifts are all too common for <strong>major crisis events</strong>...</p>
 				</div>
 			</section>
 		</div>
 	  </Scroller>
-	<MaterialApp>
+
 	  <Container>
 		<Row>
-		<Col cols={1} sm={1} md={2} lg={3}></Col>
-		<Col cols={10} sm={10} md={8} lg={6}>
-			<h2 class="text-h2 a-8">Human solidarity, as it turns out, is <b>strong</b> but fleeting.</h2>
+		<Col cols={1} sm={0} md={2} lg={3}></Col>
+		<Col cols={10} sm={12} md={8} lg={6}>
+			<h1>Human solidarity, it turns out, is <strong>strong</strong> but fleeting.</h1>
 			<div class="text-body-1">
-				<p>We band together quickly in times of need, gathering support at crucial times.</p>
-				<p>But, our focus fades just as quickly - at least this is the trend for most of the events we analysed since 2015.</p>
+				<p>We band together quickly in times of need, gathering immense support at crucial times.</p>
+				<p>Unfortunately, our focus fades just as quickly - at least this is the trend for most of the events we analysed since 2015.</p>
 			</div>
 		</Col>
-		<Col cols={1} sm={1} md={2} lg={3}></Col>
+		<Col cols={1} sm={0} md={2} lg={3}></Col>
 		</Row>
 
 		<Row>
-			<Col cols={1} sm={1} md={2} lg={2}></Col>
-			<Col cols={10} sm={10} md={8} lg={8}>
+			<Col cols={0} sm={0} md={1} lg={1}></Col>
+			<Col cols={12} sm={12} md={10} lg={10}>
 				<div>
 					<InlineSVG src={chartDesktop}/>
 				</div>
@@ -125,16 +137,16 @@
 					<InlineSVG src={chartMobile}/>
 				</div> -->
 			</Col>
-			<Col cols={1} sm={1} md={2} lg={2}></Col>
+			<Col cols={0} sm={0} md={1} lg={1}></Col>
 			</Row>
 
 		<Row>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
 			<Col cols={10} sm={10} md={8} lg={6}>
 			<div class="text-body-1">
-				<p>No surprises that help for <b>coronavirus</b> far outstrips any other major humanitarian crisis since 2015.
-				<p>But <b>Puerto Rico</b> actually ranks as the second-highest because of the disastrous <b>Hurricane Maria</b> that killed at least <b>3,087 people</b> in <b>Sept 2017</b>.</p>
-				<p>It even got more search interest than <b>Black Lives Matter</b> and held people’s interest longer than average.</p>
+				<p>It may come as little surprise that help for the <strong>pandemic</strong> far outstrips any other major humanitarian crisis since 2015.
+				<p>But <strong>Puerto Rico</strong> actually ranks as the second-highest because of the disastrous <strong>Hurricane Maria</strong> that killed at least <strong>3,087 people</strong> in <strong>Sept 2017</strong>.</p>
+				<p>It even got more search interest than <strong>Black Lives Matter</strong> and held people’s interest longer than average.</p>
 			</div>
 			</Col>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
@@ -155,17 +167,17 @@
 			<div class="text-body-1">
 				<p>The devastation was immediate and lasting. Many people lost their lives.</p>
 
-				<p>Realising the sheer immensity of repairing the damage, humanity banded together almost <b>three times</b> more than average.</p>
+				<p>Realising the sheer immensity of repairing the damage, humanity banded together at a rate <b>two times</b> higher than average.</p>
 			</div>
 			</Col>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
 		</Row>
 
 		<Row>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
-			<Col cols={10} sm={10} md={8} lg={6}>
+			<Col cols={0} sm={0} md={2} lg={3}></Col>
+			<Col cols={12} sm={12} md={8} lg={6}>
 			<div class="text-body-1">
-				<p><span class="cyan font-weight-black rounded pa-1 mb-2 elevation-1">44 people</span> helped Puerto Rico in the month the event took place...</p>
+				<p><span class="cyan font-weight-black rounded pa-1 mb-2 elevation-1">44 people</span> helped Puerto Rico in Sept 2017, the month the catastrophe took place...</p>
 				<div>
 					<InlineSVG src={puertoRicoMonth1}/>
 				</div>
@@ -175,36 +187,89 @@
 				</div>
 			</div>
 			</Col>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={0} sm={0} md={2} lg={3}></Col>
 		</Row>
 
 		<Row>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
-			<Col cols={10} sm={10} md={8} lg={6}>
-			<div class="text-body-1">
-				<p>INSERT SMALL MULTIPLES HERE</p>
-			</div>
+			<Col cols={0} sm={0} md={2} lg={3}></Col>
+			<Col cols={12} sm={12} md={8} lg={6}>
+			
+				<h3> Most help was offered to those in <span class="cyan font-weight-black rounded pa-1 mb-2 elevation-1">environmental</span> catastrophes.</h3>
+				
+				<div class="text-body-1">
+					<div>
+						<InlineSVG src={environment}/>
+					</div>
+					<p>Most of the help was focused on helping those in environmental catastrophes, like hurricanes, wildfires or floods. 
+
+					<p>For example, <strong>Hurricane Harvey</strong> devastated most of Texas and Louisiana in August 2017, killing at least 107 and causing USD$125 billion.</p>
+						
+					<p>Most spikes also happen for those events which happened closer to the US, possible evidence of the bias of Google searchers. This includes Hurricane Maria in Sept 2017 which affected mostly <strong>Puerto Rico</strong>.</p>
+						
+					<p class="last-par">The only Asian catastrophe was <strong>Nepal’s earthquake</strong> in April 2015 that killed almost 9,000 people. It has the third highest death tally of all events analysed. </p>
+				</div>
+
+				<h3><span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span>, and other pandemic-related events, inspired humany solidarity like nothing else before it.</h3>
+				
+				<div class="text-body-1">
+					<div>
+						<InlineSVG src={coronavirus}/>
+					</div>
+
+					<p>It is probably no surprise that coronavirus saw the largest spike for help out of all the events analysed.</p>
+
+					<p>Interestingly, you might be surprised to see <strong>Yemen</strong> in this category. This is because it’s spike in June 2020 is actually related to a UN meeting to discuss the awful impacts that coronavirus had on an already starving and impoverished nation.</p>
+
+					<p class="last-par"><strong>India’s</strong> most recent spike is because of the overwhelming second wave of cases currently wreaking havoc across the South Asian country.</p>
+				</div>
+
+				<h3>Black Lives Matter inspired more help than other <span class="yellow font-weight-black rounded pa-1 mb-2 elevation-1">protest</span> movements.</h3>
+
+				<div class="text-body-1">
+					<div>
+						<InlineSVG src={protests}/>
+					</div>
+					<p>Three events related to protests saw spikes in help. All of them were mostly driven by iconic moments.</p>
+
+					<p>In the case of <strong>Black Lives Matter</strong>, the spike occurs just folllowing George Floyd’s brutal death at the hands of US police officers. Just a month later and support for the cause lost impetus even though another 25 died in the following protests.</p>
+						
+					<p>The indigenous protests at <strong>Standing Rock</strong> to protest against the Dakota access pipeline project saw the lowest number of searches but there was a sustained trend of help before and after its peak, most likely encouraged by the arrests of famous actors like Shailenne Woodley.</p>
+						
+					<p class="last-par">One non-US event stands out - the Khartoum massacre in <strong>Sudan</strong>. Following months of protests, the deadly event took place in June 2019 and saw 128 killed on the spot by armed forces. This saw more support at its peak than the indigenous protests at Standing Rock.</p>
+
+				</div>
+
+				<h3><span class="red font-weight-black rounded pa-1 mb-2 elevation-1">Conflict-related</span> events like terroist attacks, mass shootings all inspired our solidarity, near and far.</h3>
+
+				<div class="text-body-1">
+					<div>
+						<InlineSVG src={conflicts}/>
+					</div>
+
+					<p>Two mass shooting events, one terrorist attack and one civil war - which is still ongoing - have been grouped under conflicts.</p>
+
+					<p><strong>Aleppo</strong> saw the greatest response right in the midst of the deadly Syrian war that saw more than 16,000 civilians killed in 2016 alone.</p>
+
+					<p><strong>Orlando’s</strong> mass shooting was at a gay club in June 2016 that killed 49 people. <strong>Las Vegas’</strong> mass shooting occured in Oct 2017 killing 61.</p>
+
+					<p class="last-par">The <strong>Paris</strong> spike is during the terroist attacks that happend in Nov 2015, that saw 130 killed.</p>
+				</div>
+
 			</Col>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={0} sm={0} md={2} lg={3}></Col>
 		</Row>
 
 		<Row>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
 			<Col cols={10} sm={10} md={8} lg={6}>
-			<h2 class="text-h2 a-8"> Humans band together in times of crisis when we <b>need it most</b>.</h2>
+			<h2 class="text-h2"> Humans band together in times of crisis when we <b>need it most</b>.</h2>
 			<div class="text-body-1">
 				<p>Some final comments here.</p>
 			</div>
 			</Col>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
 		</Row>
-		
-		
-		</Container>
-	</MaterialApp>
-	<!-- <Test /> -->
-
-	<!-- <Random /> -->
+	</Container>
 
 	<Footer>
 		<div slot="about">
@@ -217,6 +282,7 @@
 			Rebecca Pazos, Rocío Márquez, Victor and Oriol.
 		</div>
 	</Footer>
+</MaterialApp>
 </main>
 
 <style>
@@ -225,6 +291,18 @@
 		padding: 1em;
 		padding-bottom: 0;
 		margin: 0 auto;
+	}
+
+	h1 {
+		line-height: 4rem;
+	}
+
+	h3 {
+		line-height: 3rem;
+	}
+
+	strong {
+		font-weight: 600;
 	}
 
 	#myVideo {
@@ -258,6 +336,10 @@
 	.weepeople {
 		font-size: 30px;
 		color: #9F9F9F;
+	}
+
+	.last-par {
+		padding-bottom: 40px;
 	}
 
 	

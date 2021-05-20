@@ -16,9 +16,10 @@ body {
 h1, h2, h3 { font-family: 'Bitter', sans-serif; }
 
 h1 {
-	font-weight: 200;
-	font-size: 3rem !important;;
-	line-height: 1;
+	font-weight: 400;
+	font-size: 3rem !important;
+	line-height: 40px;
+	padding-bottom: 2rem;
 }
 h2, h3, h4, p { line-height: 1.5; }
 h2, h3 { font-weight: 500; }
