@@ -1,10 +1,17 @@
+<svelte:head>
+	<link rel="stylesheet" type="text/css" href="http://propublica.github.io/weepeople/weepeople.css">
+</svelte:head>
+
 <script>
+
 	import Menu from './components/common/Menu.svelte'
 	import Test from './test/Test.svelte'
 	import Footer from './components/common/Footer.svelte'
 	import Clusters from './Clusters.svelte'
 	import Scroller from '@sveltejs/svelte-scroller';
 	import dataScr from './data/Scrolly.json'
+	import { Container, Row, Col, MaterialApp } from 'svelte-materialify';
+
 
 	let index = 0, offset, progress;
 
@@ -23,78 +30,164 @@
 		</div>
 
 		<div slot="foreground">
-			<section>We all want to ✨help✨. <br>
-				But, according to Google search, not for <br> long enough. <br> <br> <br>
-				Let’s reimagine the Google search index as 100 people,<br> represented by these floating circles.
+			<section>
+				<div class="text elevation-1 pa-8 text-left">
+				<p>First, let's re-imagine the Google search index as 100 people, represented by these floating circles, <span class="weepeople">m</span> as <span class="dot"></span>.</p>
+				</div>
 			</section>
 
 			<section>
-				<b>DECEMBER  2019</b>
-				<br>
-				We start our story in December 2019. Just <br>
-				before the pandemic hits. <br> <br>
-				Three of us cared about fires burning in Australia.
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">DECEMBER 2019</p>
+				<p>We start our story just before the pandemic hits.</p>
+				<p><b>Three</b> of us banded together to help Australia during its worst bushfires in recent history - an <span class="cyan white-text font-weight-black rounded pa-1 mb-2 elevation-1">environmental</span> catastrophe.</p>
+				</div>
 			</section>
 		
 			<section>
-				<b>JANUARY 2020</b>
-				<br>
-				Interest in helping for the Australian bushfires <br>
-				peaked in January, while interest in <br>
-				Coronavirus was just beginning. 
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">JANUARY 2020</p>
+				<p>Interest in helping the Australian bushfires peaked in January just as interest in <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> was growing.</p>
+				</div>
 			</section>
 
 			<section>
-				<b>FEBRUARY 2020</b>
-				<br>
-				In less than a month, everyone’s attention was <br>
-				elsewhere. Just one person was left caring <br>
-				 about the bushfires while Coronavirus interest <br>
-				 rose to five people. 
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">FEBRUARY 2020</p>
+				<p>In less than a month, everyone’s attention was elsewhere. Just <b>one person</b> was left caring about the <span class="cyan white-text font-weight-black rounded pa-1 mb-2 elevation-1">bushfires</span> while <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> interest rose to <b>five people</b>.</p>
+				</div> 
 			</section>
 
 			<section>
-				<b>MARCH 2020</b>
-				<br>
-				At the peak of the first wave, almost everyone <br>
-				 was trying to search ways to help with <br>
-				  Coronavirus. 
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">MARCH 2020</p>
+				<p>At the peak of the first wave, almost everyone was trying to search ways to help with <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span>.</p>
+				</div>
 			</section>
 
 			<section>
-				<b>APRIL 2020</b>
-				<br>
-				Slowly, people drifted away. A month later, the <br>
-				number of people searching how to help with <br>
-				 Coronavirus dropped by a third.
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">APRIL 2020</p>
+				<p>Slowly, people drifted away. A month later, the number of people searching how to help with <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> dropped by a third.
+				</div>
 			</section>
 
 			<section>
-				<b>MAY 2020</b>
-				<br>
-				Just two months after its peak, interest in <br>
-				Coronavirus dropped to just 16 people. Black <br>
-				 Lives Matter protests were on the rise.
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">MAY 2020</p>
+				<p>Just two months after its peak, interest in <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span> dropped to just <b>16 people</b>.</p>
+				<p>Attention shifted as a result of George Floyd's horrific death, uniting people to help the <span class="yellow font-weight-black rounded pa-1 mb-2 elevation-1">Black Lives Matter protest</span> movement.</p>
+				</div>
 			</section>
 
 			<section>
-				<b>JUNE 2020</b>
-				<br>
-				The death of George Floyd sparks wide interest <br>
-				 in the Black Lives Matter protest. Yemen’s crisis <br>
-				  from Coronavirus also gets some interest.
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">JUNE 2020</p>
+				<p><span class="yellow font-weight-black rounded pa-1 mb-2 elevation-1">Black Lives Matter</span> peaks in the month following George Floyd's death. Yemen’s humanitarian crisis worsens as a result of <span class="purple white-text font-weight-black rounded pa-1 mb-2 elevation-1">Coronavirus</span>, triggering a UN meeting and a flurry of support, too.
+				</p>
+				</div>
 			</section>
 
 			<section>
-				<b>JULY 2020</b>
-				<br>
-				Less than a fifth of people are still searching <br>
-				 how to help, falling dramatically in just a <br>
-				 month. And, looking back at all the data since <br>
-				 2015, this is a common trend for crisis events.
+				<div class="text elevation-1 pa-8 text-left">
+				<p class="text-subtitle-1 text-center">JULY 2020</p>
+				<p>Less than a fifth of people are still searching how to help with the <span class="yellow font-weight-black rounded pa-1 mb-2 elevation-1">Black Lives Matter</span> protests, falling dramatically in just a month. And, looking back at all the data since 2015, these attention shifts is very common for <b>major crisis events</b>...</p>
+				</div>
 			</section>
 		</div>
 	  </Scroller>
+	<MaterialApp>
+	  <Container>
+		<Row>
+		<Col cols={1} sm={1} md={2} lg={3}></Col>
+		<Col cols={10} sm={10} md={8} lg={6}>
+			<h2 class="text-h2 a-8">Human solidarity, as it turns out, is <b>strong</b> but fleeting.</h2>
+			<div class="text-body-1">
+				<p>We band together quickly in times of need, gathering support at crucial times.</p>
+				<p>But, our focus fades just as quickly - at least this is the trend for most of the events we analysed since 2015.</p>
+			</div>
+		</Col>
+		<Col cols={1} sm={1} md={2} lg={3}></Col>
+		</Row>
+
+		<Row>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={10} sm={10} md={8} lg={6}>
+			<div class="text-body-1">
+				<p>INSERT SVG CHART HERE</p>
+			</div>
+			</Col>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			</Row>
+
+		<Row>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={10} sm={10} md={8} lg={6}>
+			<div class="text-body-1">
+				<p>No surprises that help for <b>coronavirus</b> far outstrips any other major humanitarian crisis since 2015.
+				<p>But <b>Puerto Rico</b> actually ranks as the second-highest because of the disastrous <b>Hurricane Maria</b> that killed at least <b>3,087 people</b> in <b>Sept 2017</b>.</p>
+				<p>It even got more search interest than <b>Black Lives Matter</b> and held people’s interest longer than average.</p>
+			</div>
+			</Col>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+		</Row>
+
+		<Row>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={10} sm={10} md={8} lg={6}>
+			<div class="text-body-1">
+				<p>INSERT IMAGE HERE
+			</div>
+			</Col>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+		</Row>
+
+		<Row>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={10} sm={10} md={8} lg={6}>
+			<div class="text-body-1">
+				<p>The devastation was immediate and lasting. Many people lost their lives.</p>
+
+				<p>Realising the sheer immensity of repairing the damage, humanity banded together almost <b>three times</b> more than average.</p>
+			</div>
+			</Col>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+		</Row>
+
+		<Row>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={10} sm={10} md={8} lg={6}>
+			<div class="text-body-1">
+				<p>INSERT COMPARATIVE GRAPHIC HERE</p>
+			</div>
+			</Col>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+		</Row>
+
+		<Row>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={10} sm={10} md={8} lg={6}>
+			<div class="text-body-1">
+				<p>INSERT SMALL MULTIPLES HERE</p>
+			</div>
+			</Col>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+		</Row>
+
+		<Row>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={10} sm={10} md={8} lg={6}>
+			<h2 class="text-h2 a-8"> Humans band together in times of crisis when we <b>need it most</b>.</h2>
+			<div class="text-body-1">
+				<p>Some final comments here.</p>
+			</div>
+			</Col>
+			<Col cols={1} sm={1} md={2} lg={3}></Col>
+		</Row>
+		
+		
+		</Container>
+	</MaterialApp>
 	<!-- <Test /> -->
 
 	<!-- <Random /> -->
@@ -119,22 +212,6 @@
 		margin: 0 auto;
 	}
 
-	h1, h3 {
-		max-width: 600px;
-		margin: 0 auto;
-		text-align: center;
-		padding: 50px;
-	}
-
-	.header-text {
-		position: absolute;
-		top: 10vh;
-		margin-left: 30vw;
-		background-color: hsla(0,0%,100%,.8);
-		max-width: 600px;
-		padding: 10px;
-	}
-
 	#myVideo {
   		right: 0;
   		bottom: 0;
@@ -149,8 +226,27 @@
   		border-radius: 50%;
   		display: inline-block;
 	}
+
 	section {
 		height: 80vh;
+		padding-top: 20vh;
 		text-align: center;
+		max-width: 450px;
+		margin: 0 auto;
+		font-size: 25px;
 	}
+
+	.text {
+		background-color: hsla(0,0%,100%,.8);
+	}
+
+	.weepeople {
+		font-size: 30px;
+		color: #9F9F9F;
+	}
+
+	.env {
+		background-color: #71E7E0;
+	}
+	
 </style>
