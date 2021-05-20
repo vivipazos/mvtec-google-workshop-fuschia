@@ -14,7 +14,9 @@
 	import InlineSVG from 'svelte-inline-svg';
 
 	const chartDesktop = './assets/desktop-svg-chart.svg';
-	const chartMobile = './assets/mobile-svg-chart.svg'
+	const chartMobile = './assets/mobile-svg-chart.svg';
+	const puertoRicoMonth1 = './assets/puertoRico-month1.svg';
+	const puertoRicoMonth2 = './assets/puertoRico-month2.svg';
 
 	let index = 0, offset, progress;
 
@@ -163,7 +165,14 @@
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
 			<Col cols={10} sm={10} md={8} lg={6}>
 			<div class="text-body-1">
-				<p>INSERT COMPARATIVE GRAPHIC HERE</p>
+				<p><span class="cyan font-weight-black rounded pa-1 mb-2 elevation-1">44 people</span> helped Puerto Rico in the month the event took place...</p>
+				<div>
+					<InlineSVG src={puertoRicoMonth1}/>
+				</div>
+				<p>... compared with <span class="cyan font-weight-black rounded pa-1 mb-2 elevation-1">16 people</span> a month later.</p>
+				<div>
+					<InlineSVG src={puertoRicoMonth2}/>
+				</div>
 			</div>
 			</Col>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
