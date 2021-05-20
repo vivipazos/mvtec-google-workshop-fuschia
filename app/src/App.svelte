@@ -241,7 +241,7 @@
 
 				</div>
 
-				<h3><span class="red font-weight-black rounded pa-1 mb-2 elevation-1">Conflict-related</span> events like terroist attacks, mass shootings all inspired our solidarity, near and far.</h3>
+				<h3><span class="red white-text font-weight-black rounded pa-1 mb-2 elevation-1">Conflict-related</span> events like terroist attacks, mass shootings all inspired our solidarity, near and far.</h3>
 
 				<div class="text-body-1">
 					<div>
