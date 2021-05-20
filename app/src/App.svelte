@@ -133,13 +133,12 @@
 		</Row>
 
 		<Row>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
-			<Col cols={10} sm={10} md={8} lg={6}>
-			<div class="text-body-1">
-				<p>INSERT IMAGE HERE
-			</div>
+			<Col cols={0} sm={0} md={0} lg={1}></Col>
+			<Col cols={12} sm={12} md={12} lg={10}>
+			<img src="./assets/hurricaneMaria.jpg" alt="An image of the destruction after Hurricane Maria wiped out entire streets on Sept 19, 2017." width="100%" />
+			<div class="text-caption">People stand amid the destruction on the morning after Hurricane Maria destroyed much of Puerto Rico. Photo: <a href="https://www.flickr.com/photos/rooseveltskerrit/37372721465/">Flickr by Roosevelt Skerrit</a></div>
 			</Col>
-			<Col cols={1} sm={1} md={2} lg={3}></Col>
+			<Col cols={0} sm={0} md={0} lg={1}></Col>
 		</Row>
 
 		<Row>
@@ -241,7 +240,7 @@
 	}
 
 	.text {
-		background-color: hsla(0,0%,100%,.8);
+		background-color: hsla(0,0%,100%,.9);
 	}
 
 	.weepeople {
