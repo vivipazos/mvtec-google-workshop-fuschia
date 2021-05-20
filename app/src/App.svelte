@@ -116,12 +116,12 @@
 		<Row>
 			<Col cols={1} sm={1} md={2} lg={2}></Col>
 			<Col cols={10} sm={10} md={8} lg={8}>
-				<div class="desktop">
+				<div>
 					<InlineSVG src={chartDesktop}/>
 				</div>
-				<div class="mobile">
+				<!-- <div class="d-block d-sm-none">
 					<InlineSVG src={chartMobile}/>
-				</div>
+				</div> -->
 			</Col>
 			<Col cols={1} sm={1} md={2} lg={2}></Col>
 			</Row>
@@ -211,6 +211,7 @@
 </main>
 
 <style>
+
 	main {
 		padding: 1em;
 		padding-bottom: 0;
@@ -233,7 +234,7 @@
 	}
 
 	section {
-		height: 80vh;
+		height: 100vh;
 		padding-top: 20vh;
 		text-align: center;
 		max-width: 450px;
@@ -249,27 +250,6 @@
 		font-size: 30px;
 		color: #9F9F9F;
 	}
-
-	.desktop  {
-		display: none;
-		min-width: 480px;
-	}
-
-	.mobile {
-		display: block;
-		width: 100%;
-		/* max-width: 480px; */
-	}
-
-	@media only screen and (min-width:600px){
-		.mobile {
-			display: none;
-		}
-		.desktop {
-			display:block;
-			max-width: 1200px;
-			margin: 0 auto;
-		}
 
 	
 </style>
