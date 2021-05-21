@@ -27,7 +27,7 @@
             <Col cols={12} sm={12} md={4}>
                 <h4>Made by</h4>
                 <p><slot name='team'></slot></p>
-                <p><b>Google News Lab:</b> <a class="white-text" href='https://simonrogers.net/'>Simon Rogers</a> and <a class="white-text" href='http://albertocairo.com/'>Alberto Cairo</a></p>
+                <p><b>Google News Lab:</b> <a href="https://twitter.com/beckypinners?lang=en" class="white-text">Becky Pinnington</a>, <a class="white-text" href='https://simonrogers.net/'>Simon Rogers</a> and <a class="white-text" href='http://albertocairo.com/'>Alberto Cairo</a></p>
                 <p><b>MVTEC mentors: </b> <a class="white-text" href="https://www.karmapeiro.com/en/landing-en/">Karma Peiró</a> and <a class="white-text" href="https://www.linkedin.com/in/mosbrn/">Matt Osborn</a>.</p>
             </Col>
         </Row>

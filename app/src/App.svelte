@@ -23,6 +23,24 @@
 
 	let index = 0, offset, progress;
 
+	// import * as jQuery from "jquery";
+	
+	// (function($) {
+    //     var video = window.$("#myVideo");
+ 
+ 	// 	var scrollToBtm = function() {
+	// 	window.$("html, body").animate({
+    // 	scrollTop: window.$('main').position().top // replace with whatever you want
+	//    	}, 4000);
+	// 	};
+
+	// 	video[0].onended = function() {
+  	// 	scrollToBtm(); // call function on video.onended if you want
+	// 	};
+    // })(jQuery);
+
+	
+
 </script>
 
 <main>
@@ -344,4 +362,5 @@
 	.legend {
 		width: 60px;
 	}
+
 </style>
