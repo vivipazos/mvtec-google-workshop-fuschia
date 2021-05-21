@@ -7,28 +7,28 @@ const clusters = {
     "Australia fires": {
 		x0: 200,
 		y0: 350,
-        color: '#000000',
+        color: '#e91e63',
         textColor: 'white',
         textBg: '#00bcd4',
 	},
-    "Yemen": {
+    "Yemen crisis": {
 		x0: 350,
 		y0: 350,
-        color: '#000000',
+        color: '#e91e63',
         textColor: 'white',
         textBg: '#9c27b0',
 	},
 	"Black Lives Matter": {
 		x0: 500,
 		y0: 350,
-        color: '#000000',
+        color: '#e91e63',
         textColor: 'black',
         textBg: '#ffeb3b',
 	},
 	"Coronavirus": {
 		x0: 700,
 		y0: 350,
-        color: '#000000',
+        color: '#e91e63',
         textColor: 'white',
         textBg: '#9c27b0'
 	},
@@ -166,8 +166,8 @@ $: {
         <g>
             {#each annotations as d}
             <circle cx={d.x} cy={d.y} r={d.r} fill="none" stroke="#000" data-name={d.name}/>
-            <rect x={d.x - d.textWidth/2} y={d.y + d.r - 2} width={d.textWidth} height={20} fill={d.textBg} rx={3} padding={20}/>
-            <text x={d.x} y={d.y + d.r + 10} fill={d.textColor} padding={20}>
+            <rect x={d.x - d.textWidth/2} y={d.y - d.r - 6} width={d.textWidth*1} height={20} fill={d.textBg} rx={3}/>
+            <text x={d.x} y={d.y - d.r + 8} fill={d.textColor}>
                 {d.name}
             </text>
             {/each}
@@ -179,7 +179,8 @@ $: {
 
     text {
         text-anchor: middle;
-        font-size: 15px;
+        font-size: 10px;
+        font-weight: 400;
     }
 
 </style>

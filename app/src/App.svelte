@@ -41,7 +41,7 @@
 		<div slot="foreground">
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
-				<p>Pandemics, wildfires, protests. What drove us to band together to help?
+				<p>Pandemics, wildfires, protests. What brought us together to offer &#10024; <strong>help</strong> &#10024; to those in need?
 				<p>We found  some anwers in Google's search index but first, let's reimagine the  data as 100 people, represented by these floating circles <img src="./assets/grey-legend.png" class="legend"/>.</p>
 				
 				</div>
@@ -49,7 +49,7 @@
 
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
-				<p>As they group together to offer help to those in need, the circles will change from grey to black <img src="./assets/black-legend.png" class="legend"/>.</p>
+				<p>As they group together to offer help to those in need, the circles will change from grey to fuschia <img src="./assets/pink-legend.png" class="legend"/>.</p>
 				</div>
 			</section>
 
@@ -314,14 +314,6 @@
 		min-height: 100%;
 	}
 
-	.dot {
-  		height: 20px;
-  		width: 20px;
-  		background-color: #9F9F9F;
-  		border-radius: 50%;
-  		display: inline-block;
-	}
-
 	section {
 		height: 100vh;
 		padding-top: 20vh;
@@ -335,11 +327,6 @@
 		background-color: hsla(0,0%,100%,.9);
 	}
 
-	.weepeople {
-		font-size: 30px;
-		color: #9F9F9F;
-	}
-
 	.last-par {
 		padding-bottom: 40px;
 	}
@@ -347,5 +334,4 @@
 	.legend {
 		width: 60px;
 	}
-	
 </style>
