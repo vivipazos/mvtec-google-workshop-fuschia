@@ -39,7 +39,19 @@
 	// 	};
     // })(jQuery);
 
-	
+	window.addEventListener('load',function(){
+	var video = document.getElementById('myVideo');
+    var element = document.getElementById('afterContent');
+    video.onended = function(){
+    	//the video ended
+        //get the distance between the element and the top of the document.
+        var scrollDistance = document.body.scrollTop;
+        var elemRect = element.getBoundingClientRect();
+        var elemOffsetViewportDistance = elemRect.top;
+        var totalOffset = scrollDistance+elemOffsetViewportDistance;
+        window.scrollTo(0,totalOffset);
+    	};
+	});
 
 </script>
 
@@ -51,6 +63,7 @@
 			<source src="./assets/intro.mp4" type="video/mp4">
 		</video>
 	</div>
+	<div id="afterContent">
 	<Scroller top={0} bottom={1} bind:index={index}>
 		<div slot="background">
 			<Clusters selectedObject={dataScr[index]}/>
@@ -133,7 +146,7 @@
 			</section>
 		</div>
 	  </Scroller>
-
+	</div>
 	  <Container>
 		<Row>
 		<Col cols={1} sm={0} md={2} lg={3}></Col>
