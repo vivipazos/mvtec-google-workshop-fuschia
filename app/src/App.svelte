@@ -42,7 +42,7 @@
 			<section>
 				<div class="text elevation-1 pa-8 text-left">
 				<p>Pandemics, wildfires, protests. What brought us together to offer &#10024; <strong>help</strong> &#10024; to those in need?
-				<p>We found  some anwers in Google's search index but first, let's reimagine the  data as 100 people, represented by these floating circles <img src="./assets/grey-legend.png" class="legend"/>.</p>
+				<p>We found  some answers in Google's search index but first, let's reimagine the  data as 100 people, represented by these floating circles <img src="./assets/grey-legend.png" class="legend"/>.</p>
 				
 				</div>
 			</section>
@@ -264,9 +264,13 @@
 		<Row>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
 			<Col cols={10} sm={10} md={8} lg={6}>
-			<h1> Humans band together in times of crisis when we <strong>need it most</strong>.</h1>
+			<h1> Humans come together in times of crisis when we <strong>need it most</strong>.</h1>
 			<div class="text-body-1">
-				<p>Some final comments here.</p>
+				<p>We've most likely all been there. It's the start of a new year, or you've just had a health scare or a personal crisis, and you've resolved to make long-term changes, only to revert back to your old ways a month later.</p>
+				<p>It may seem odd to frame global solidarity in this way, but it has some striking similarities to the way we respond to any crisis - be it global or personal.</p>
+				<p>Carmen Reinhart, a professor of economics at the University of  Maryland and co-author of the book 'This Time Is Different: Eight Centuries of Financial Folly' said <strong>we don't make long-lasting change "unless we really have to"</strong> in a <a href="https://www.nytimes.com/2009/12/05/your-money/05shortcuts.html"> 2009 New York Times article</a>.</p>
+				<p>In times of great need or emergency, we spring into action. But, according to those who have studied this, it's far more complicated to keep that same level of interest. In fact, it requires a combination of lots of time, some personal trauma, social stigma and government policy.</p>
+				<p>So, it turns out, our quick to help, and quick return to normalcy is a human trait we apply to almost all situations, including the act of helping those in a global crisis. </p>
 			</div>
 			</Col>
 			<Col cols={1} sm={1} md={2} lg={3}></Col>
@@ -275,13 +279,19 @@
 
 	<Footer>
 		<div slot="about">
-			Google search trends reveal a lot about what it...
+			We've  used Google search trends to reveal where global attention is shifting with regards to people offering 'help'. We wanted to find out what human solidarity looked like and what topics were inspiring the  most offers for help. 
 		</div>
 		<div slot="data">
-			The data is indexed to...
+			According to Google, their trends data "is an unbiased sample of Google search data. It’s anonymized (no one is personally identified), categorized (determining the topic for a search query) and aggregated (grouped together)." <br><br>
+			
+			We have narrowed down a list of search queries and they are all indexed to the highest value, which in this cases is searches for Coronavirus in March 2020. We then filtered to just the terms referencing humanitarian crisis events and indexed these total 100 people, for easier comparison and to bring back the 'human' to the data. Want to try yourself? Here is the <a class="white-text" href="https://docs.google.com/spreadsheets/d/1xJdiA6oH-zgP1GD-mhLDDgfG_PwZgSJywWrVI1yfeG4/edit?usp=sharing"> spreadsheet</a>!
 		</div>
 		<div slot="team">
-			Rebecca Pazos, Rocío Márquez, Victor and Oriol.
+			<a class="white-text" href="Oriol Vidal Porta">Oriol Vidal Porta</a>,
+			<a class="white-text" href="https://www.linkedin.com/in/rebeccapazos/">Rebecca Pazos</a>, 
+			<a class="white-text" href="https://www.linkedin.com/in/romarquez/">Rocío Márquez</a> and 
+			Víctor Garcia Domínguez. 
+			
 		</div>
 	</Footer>
 </MaterialApp>
@@ -310,8 +320,8 @@
 	#myVideo {
   		right: 0;
   		bottom: 0;
-  		min-width: 100%;
-		min-height: 100%;
+  		width: 100%;
+		height: auto;
 	}
 
 	section {
