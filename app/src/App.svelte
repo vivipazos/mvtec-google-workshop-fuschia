@@ -21,7 +21,9 @@
 	const protests = './assets/protests.svg';
 	const coronavirus = './assets/coronavirus.svg';
 
-	let index = 0, offset, progress;
+	let offset, progress;
+
+	$:index=index < 10 ? index:0 ;
 
 	// import * as jQuery from "jquery";
 	
